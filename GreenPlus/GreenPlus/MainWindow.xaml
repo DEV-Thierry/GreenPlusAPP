@@ -1,0 +1,201 @@
+﻿<Window x:Class="GreenPlus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenPlus"
+        xmlns:vm="clr-namespace:GreenPlus.ViewModels"
+        xmlns:Menu="clr-namespace:GreenPlus.Utilities"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        WindowState="Maximized"
+        >
+    <Window.DataContext>
+        <vm:NavegacaoVM/>
+    </Window.DataContext>
+    
+    <Grid >
+        <Border Background="#E9E9E9"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Painel de Navegação-->
+            <Grid x:Name="SideBar"
+                  HorizontalAlignment="Left"
+                  Width="60"
+                  MouseEnter="SideBar_MouseEnter"
+                  MouseLeave="SideBar_MouseLeave">
+                <Border Background="#FFF"
+                        CornerRadius="0,20,20,0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Height="80">
+                        <Separator Margin="0,75,0,10"/>
+                    </StackPanel>
+                    
+                    <!--Home-->
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding HomeCommand}"
+                              Grid.Row="2"
+                              IsChecked="True">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Icon:PackIconMaterial Kind="Home"
+                                                   Width="30"
+                                                   Height="30"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center"/>
+
+                            <TextBlock Grid.Column="1"
+                                       x:Name="txtHome"
+                                       Text="Home"
+                                       Style="{StaticResource txtStyles}"/>
+
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--Cadastro de Usuários-->
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding ProdutoCommand}"
+                              Grid.Row="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Icon:PackIconMaterial Kind="CalendarPlus"
+                                                   Width="30"
+                                                   Height="30"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"/>
+
+                            <TextBlock Grid.Column="1"
+                                       x:Name="txtCadastro"
+                                       Style="{StaticResource txtStyles}"
+                                       Text="Cadastro"
+                   />
+                        </Grid>
+                    </Menu:Btn>
+
+                    
+                    <Menu:Btn Style="{StaticResource BtnStyle}" 
+                                  Grid.Row="4"
+                                  Click="Btn_Click">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Icon:PackIconMaterial Kind="Sprout"
+                                                   Width="30"
+                                                   Height="30"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center"/>
+
+                                <TextBlock Text="Produção"
+                                       Style="{StaticResource txtStyles}"
+                                       x:Name="txtProducao"
+                                       Grid.Column="1"/>
+                            </Grid>
+                    </Menu:Btn>
+
+                    <StackPanel x:Name="ConteudoDrop" Visibility="Collapsed"
+                                    Grid.Row="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Rectangle VerticalAlignment="Stretch"
+                                           Width="1"
+                                           Margin="2"
+                                           Stroke="#387c51"/>
+
+                                <StackPanel Grid.Column="1">
+                                    <StackPanel Style="{StaticResource Hover}">
+                                        <Button x:Name="cadastro"
+                                                Style="{StaticResource BotaoDropdown}"
+                                                Margin="4,7,0,0">Calendario</Button>
+                                    </StackPanel>
+
+                                    <StackPanel Style="{StaticResource Hover}">
+                                        <Button x:Name="Plantio"
+                                                Style="{StaticResource BotaoDropdown}"
+                                                Margin="4,7,0,0">Plantio</Button>
+                                    </StackPanel>
+
+                                    <StackPanel Style="{StaticResource Hover}">
+                                        <Button x:Name="Colheita"
+                                                Style="{StaticResource BotaoDropdown}"
+                                                Margin="4,7,0,0">Colheita</Button>
+                                    </StackPanel>
+
+                                    <StackPanel Style="{StaticResource Hover}">
+                                        <Button x:Name="irrigar"
+                                                Style="{StaticResource BotaoDropdown}"
+                                                Margin="4,7,0,0">Irrigação</Button>
+                                    </StackPanel>
+                                </StackPanel>
+                                
+                                
+                            </Grid>
+
+                            
+                        </StackPanel>
+
+                    <Menu:Btn Style="{StaticResource BtnStyle}" 
+                              Grid.Row="6">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Icon:PackIconMaterial Kind="Archive"
+                                                   Width="30"
+                                                   Height="30"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"/>
+
+                            <TextBlock Text="Estoque"
+                                       Style="{StaticResource txtStyles}"
+                                       x:Name="txtEstoque"
+                                       Grid.Column="1"/>
+                        </Grid>
+                    </Menu:Btn>
+                    
+                </Grid>
+            </Grid>
+
+            
+            <!--paginas-->
+            <Grid Grid.Column="1">
+                <ContentControl x:Name="Pages"
+                                Content="{Binding CurrentView}"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</Window>
