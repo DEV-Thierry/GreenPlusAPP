@@ -87,7 +87,7 @@ namespace GreenPlus.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GreenPlus;V1.0.0.0;component/windows/login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GreenPlus;component/windows/login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\Login.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

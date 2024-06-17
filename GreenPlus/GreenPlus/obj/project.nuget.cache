@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iCNH4zI8+3w=",
+  "dgSpecHash": "yMyqSMcx7hw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\GreenPlus.csproj",
+  "projectFilePath": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\GreenPlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thier\\.nuget\\packages\\mahapps.metro.iconpacks.core\\5.0.0\\mahapps.metro.iconpacks.core.5.0.0.nupkg.sha512",
     "C:\\Users\\thier\\.nuget\\packages\\mahapps.metro.iconpacks.material\\5.0.0\\mahapps.metro.iconpacks.material.5.0.0.nupkg.sha512",

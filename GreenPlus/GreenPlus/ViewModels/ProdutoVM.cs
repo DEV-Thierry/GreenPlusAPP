@@ -59,6 +59,12 @@ namespace GreenPlus.ViewModels
             set { produto.Irrigação = value; OnPropertyChanged(); }
         }
 
+        public float ValorVenda
+        {
+            get { return produto.Valor; }
+            set { produto.Valor = value; OnPropertyChanged(); }
+        }
+
         public ProdutoVM()
         {
             produto = new Produto();
@@ -70,6 +76,7 @@ namespace GreenPlus.ViewModels
             Temperatura = 0;
             solo = " ";
             Irrigar = 0;
+            ValorVenda = 0;
         }
     }
 }

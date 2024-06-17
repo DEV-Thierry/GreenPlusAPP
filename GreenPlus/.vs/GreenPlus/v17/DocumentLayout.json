@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\",
+  "WorkspaceRootPath": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\views\\produto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\views\\produto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\views\\produto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\viewmodels\\produtovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\viewmodels\\produtovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\views\\produto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\views\\produto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\styles\\textbox_styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\styles\\textbox_styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\github\\greenplusapp\\greenplus\\greenplus\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|c:\\users\\thier\\documents\\pim\\app\\greenplus\\greenplus\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0FBDACD7-7B03-4B34-AD77-1668C184FD7E}|GreenPlus\\GreenPlus.csproj|solutionrelative:greenplus\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,96 +42,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Views\\Home.xaml",
-              "RelativeDocumentMoniker": "GreenPlus\\Views\\Home.xaml",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Views\\Home.xaml*",
-              "RelativeToolTip": "GreenPlus\\Views\\Home.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-13T21:54:01.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Produto.xaml",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml",
-              "RelativeDocumentMoniker": "GreenPlus\\Views\\Produto.xaml",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml",
-              "RelativeToolTip": "GreenPlus\\Views\\Produto.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-13T21:53:00.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "GreenPlus\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Models\\Usuario.cs",
-              "RelativeToolTip": "GreenPlus\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
+              "Title": "ProdutoVM.cs",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\ViewModels\\ProdutoVM.cs",
+              "RelativeDocumentMoniker": "GreenPlus\\ViewModels\\ProdutoVM.cs",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\ViewModels\\ProdutoVM.cs",
+              "RelativeToolTip": "GreenPlus\\ViewModels\\ProdutoVM.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T10:25:20.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GreenPlus\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GreenPlus\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:31:59.767Z",
+              "WhenOpened": "2024-06-17T21:56:22.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Windows\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "GreenPlus\\Windows\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Windows\\Login.xaml.cs",
-              "RelativeToolTip": "GreenPlus\\Windows\\Login.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwB4AAAAMAAAA",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\App.xaml",
+              "RelativeDocumentMoniker": "GreenPlus\\App.xaml",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\App.xaml",
+              "RelativeToolTip": "GreenPlus\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-17T21:48:44.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TextBox_Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Styles\\TextBox_Styles.xaml",
+              "RelativeDocumentMoniker": "GreenPlus\\Styles\\TextBox_Styles.xaml",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Styles\\TextBox_Styles.xaml",
+              "RelativeToolTip": "GreenPlus\\Styles\\TextBox_Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-17T21:32:04.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Produto.xaml",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml",
+              "RelativeDocumentMoniker": "GreenPlus\\Views\\Produto.xaml",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml",
+              "RelativeToolTip": "GreenPlus\\Views\\Produto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-17T21:40:48.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml.cs",
+              "RelativeDocumentMoniker": "GreenPlus\\Views\\Produto.xaml.cs",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\Views\\Produto.xaml.cs",
+              "RelativeToolTip": "GreenPlus\\Views\\Produto.xaml.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwEIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T11:42:50.308Z",
+              "WhenOpened": "2024-06-17T15:58:15.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\App.xaml",
-              "RelativeDocumentMoniker": "GreenPlus\\App.xaml",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\App.xaml",
-              "RelativeToolTip": "GreenPlus\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T11:39:33.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Windows\\Login.xaml",
-              "RelativeDocumentMoniker": "GreenPlus\\Windows\\Login.xaml",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\Windows\\Login.xaml",
-              "RelativeToolTip": "GreenPlus\\Windows\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T11:34:54.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GreenPlus\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\thier\\Documents\\PIM\\APP\\GreenPlus\\GreenPlus\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\thier\\Documents\\GitHub\\GreenPlusAPP\\GreenPlus\\GreenPlus\\MainWindow.xaml",
               "RelativeToolTip": "GreenPlus\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-12T01:14:51.554Z",

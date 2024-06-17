@@ -24,7 +24,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.4*"/>
                 <RowDefinition Height="1.1*"/>
-                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="0.8*"/>
                 <RowDefinition Height="0.3*"/>
             </Grid.RowDefinitions>
@@ -59,8 +59,10 @@
                                     MouseLeftButtonDown="ImgProduto_MouseLeftButtonDown">
                         </StackPanel>
                     </Grid>
-
-                    <Grid Grid.Column="1">
+                    
+                    <!--Detalhes gerais produto de Venda-->
+                    <Grid Grid.Column="1"
+                          x:Name="DetalhesVenda">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.7*"/>
                             <RowDefinition Height="*"/>
@@ -83,10 +85,12 @@
                                        Margin="10,10,0,0"/>
 
                             <TextBox Text="{Binding Nome}"
+                                     x:Name="NomePop"
                                      Grid.Row="1"
                                      Style="{StaticResource txtBoxStyle}"/>
                         </StackPanel>
-                        
+
+
                         <!--Nome Científico-->
                         <StackPanel Grid.Row="2">
                             <TextBlock Text="Nome Científico*"
@@ -98,6 +102,51 @@
                         </StackPanel>
 
                     </Grid>
+                    
+                    <!--Detalhes gerais produto de Uso Interno-->
+                    <Grid Grid.Column="1"
+                          x:Name="DetalhesInterno"
+                          Visibility="Collapsed">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.7*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!--Titulo-->
+                        <StackPanel >
+                            <TextBlock Text="Detalhes Gerais"
+                                       FontSize="20"
+                                       FontWeight="DemiBold"
+                                       Margin="10,10,0,0"/>
+                        </StackPanel>
+
+                        <!--Nome-->
+                        <StackPanel Grid.Row="1">
+                            <TextBlock Text="Nome*"
+                                       Grid.Row="1"
+                                       FontSize="16"
+                                       Margin="10,10,0,0"/>
+
+                            <TextBox Text=" "
+                                     x:Name="txtNome"
+                                     Grid.Row="1"
+                                     Style="{StaticResource txtBoxStyle}"/>
+                        </StackPanel>
+
+
+                        <!--Descrição-->
+                        <StackPanel Grid.Row="2">
+                            <TextBlock Text="Descrição*"
+                                       FontSize="16"
+                                       Margin="10,10,0,0"/>
+                            <TextBox x:Name="txtDescri"
+                                        Text="{Binding NomeC}"
+                                        Style="{StaticResource txtBoxStyle}"/>
+                        </StackPanel>
+
+                    </Grid>
+
                     <Grid Grid.Column="2">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.7*"/>
@@ -112,29 +161,54 @@
                                    Margin="10,10,0,0"/>
                             <StackPanel Orientation="Horizontal">
                                 <RadioButton Content="Venda"
-                                         FontSize="14"
-                                         Margin="10,10,20,0"/>
+                                             x:Name="RadioVenda"
+                                             Checked="RadioVenda_Checked"
+                                             FontSize="14"
+                                             Margin="10,10,20,0"/>
                                 <RadioButton Content="Uso Interno"
-                                         FontSize="14"
-                                         Margin="40,10,0,0"/>
+                                             x:Name="RadioInterno"
+                                             Checked="RadioInterno_Checked"
+                                             FontSize="14"
+                                             Margin="40,10,0,0"/>
                             </StackPanel>
                         </StackPanel>
 
                         <!--Classificação-->
-                        <StackPanel Grid.Row="2">
+                        <StackPanel Grid.Row="2"
+                                    x:Name="painelVenda">
                             <TextBlock Text="Classificação*"
                                    FontSize="16"
                                    Margin="10,10,0,0"/>
-                            <TextBox x:Name="txtClass"
-                                 Text="{Binding Class}"
-                                Style="{StaticResource txtBoxStyle}"/>
+                            <ComboBox Name="cbClass"
+                                      Height="30"
+                                      Padding="5,5,0,0"
+                                      FontSize="14"
+                                      Margin="10,10,40,0">
+                                <ComboBoxItem>Tuberosas</ComboBoxItem>
+                                <ComboBoxItem>Herbáceas</ComboBoxItem>
+                                <ComboBoxItem>Fruto</ComboBoxItem>
+                            </ComboBox>
                         </StackPanel>
+                        
+                        <!--estado de conservação USO INTERNO-->
+                        <StackPanel Grid.Row="2"
+                                    x:Name="painelConserva"
+                                    Visibility="Collapsed">
+                            <TextBlock Text="Estado de Conservação*"
+                                       FontSize="16"
+                                       Margin="10,10,0,0"/>
+                            <TextBox x:Name="txtConserva"
+                                     Text="{Binding Class}"
+                                     Style="{StaticResource txtBoxStyle}"/>
+                        </StackPanel>
+
                     </Grid>
                 </Grid>
             </Border>
 
             <!--segunda seção-->
             <Border Grid.Row="2"
+                    x:Name="PainelRequisitos"
                     Background="#E1E1E1"
                     CornerRadius="10"
                     Margin="20,0,20,10">
@@ -166,7 +240,7 @@
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="1">
-                        <TextBlock Text="Temperatura"
+                        <TextBlock Text="Temperatura / °C"
                                    FontSize="16"
                                    Margin="10,5,0,0"/>
 
@@ -176,13 +250,21 @@
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="2">
-                        <TextBlock Text="Irrigação"
+                        <TextBlock Text="Irrigação / Hrs"
                                    FontSize="16"
                                    Margin="10,5,0,0"/>
 
-                        <TextBox x:Name="txtIrrigar"
-                                 Text="{Binding Irrigar}"
-                                 Style="{StaticResource txtBoxStyle}"/>
+                        <ComboBox Name="cbIrrigar"
+                                  Height="30"
+                                  Padding="5,5,0,0"
+                                  FontSize="14"
+                                  Margin="10,10,40,0">
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>16</ComboBoxItem>
+                            <ComboBoxItem>24</ComboBoxItem>
+                        </ComboBox>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="3">
@@ -191,7 +273,7 @@
                                    Margin="10,5,0,0"/>
 
                         <TextBox x:Name="txtValor"
-                                 Text=""
+                                 Text="{Binding ValorVenda, StringFormat=\{0:C\}}"
                                  Style="{StaticResource txtBoxStyle}"/>
                     </StackPanel>
                 </Grid>

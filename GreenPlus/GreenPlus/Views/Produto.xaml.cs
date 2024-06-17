@@ -52,5 +52,25 @@ namespace GreenPlus.Views
                 }
             }
         }
+
+        private void RadioVenda_Checked(object sender, RoutedEventArgs e)
+        {
+            DetalhesVenda.Visibility = Visibility.Visible;
+            painelVenda.Visibility = Visibility.Visible;
+            PainelRequisitos.Visibility = Visibility.Visible;
+
+            painelConserva.Visibility = Visibility.Collapsed;
+            DetalhesInterno.Visibility = Visibility.Collapsed;
+        }
+
+        private void RadioInterno_Checked(object sender, RoutedEventArgs e)
+        {
+            DetalhesVenda.Visibility = Visibility.Collapsed;
+            painelVenda.Visibility = Visibility.Collapsed;
+            PainelRequisitos.Visibility = Visibility.Collapsed;
+
+            painelConserva.Visibility = Visibility.Visible;
+            DetalhesInterno.Visibility = Visibility.Visible;
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace GreenPlus.Models
         public int Temperatura {  get; set; }
         public string Solo { get; set; }
         public int Irrigação { get; set; }
+        public float Valor {  get; set; }
         
     }
 }
