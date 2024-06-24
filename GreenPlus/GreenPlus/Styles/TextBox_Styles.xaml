@@ -20,9 +20,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border Background="{TemplateBinding Background}"
-                            x:Name="bd" BorderBrush="#E9E9E9" 
-                            BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15">
+                    <Border Background="#F8F8F8"
+                            x:Name="bd" 
+                            BorderBrush="#E3E3E3"
+                            BorderThickness="2" CornerRadius="15">
                         <ScrollViewer x:Name="PART_ContentHost"/>
                     </Border>
 
@@ -46,9 +47,9 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
-                    <Border Background="{TemplateBinding Background}"
-                            x:Name="bdp" BorderBrush="#E9E9E9"
-                            BorderThickness="{TemplateBinding BorderThickness}"
+                    <Border Background="#F8F8F8"
+                            x:Name="bdp" BorderBrush="#E3E3E3"
+                            BorderThickness="2"
                             CornerRadius="15">
                         <ScrollViewer x:Name="PART_ContentHost"
                                       SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"/>

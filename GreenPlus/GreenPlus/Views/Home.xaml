@@ -9,6 +9,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800"
              Style="{StaticResource Page_Style}">
+    
+    
     <Grid Margin="0,4,0,-4">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -36,11 +38,25 @@
                     </Border.Background>
 
                     <StackPanel>
-                        <TextBlock Text="Olá, User!"
-                                   FontSize="18"
-                                   FontFamily="Montserrat"
-                                   Margin="20,10,0,0"
-                                   Foreground="#E9E9E9"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Olá, "
+                               FontSize="18"
+                               FontFamily="Montserrat"
+                               Margin="20,10,0,0"
+                               Foreground="#E9E9E9"/>
+
+                            <TextBlock x:Name="Saudacao"
+                                       FontSize="18"
+                                       FontFamily="Montserrat"
+                                       Margin="20,10,0,0"
+                                       Foreground="#E9E9E9"/>
+
+                            <TextBlock Text="!"
+                                       FontSize="18"
+                                        FontFamily="Montserrat"
+                                        Margin="20,10,0,0"
+                                        Foreground="#E9E9E9"/>
+                        </StackPanel>
 
                         <TextBlock Text="Seja bem vindo(a) de volta"
                                    FontSize="14"

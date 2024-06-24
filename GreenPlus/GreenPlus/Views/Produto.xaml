@@ -141,12 +141,13 @@
                                        FontSize="16"
                                        Margin="10,10,0,0"/>
                             <TextBox x:Name="txtDescri"
-                                        Text="{Binding NomeC}"
                                         Style="{StaticResource txtBoxStyle}"/>
                         </StackPanel>
 
                     </Grid>
 
+                    <!--painel categoria e classificação-->
+                    <!--ou estado ce conservação-->
                     <Grid Grid.Column="2">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.7*"/>
@@ -173,7 +174,7 @@
                             </StackPanel>
                         </StackPanel>
 
-                        <!--Classificação-->
+                        <!--Classificação para categoria de venda-->
                         <StackPanel Grid.Row="2"
                                     x:Name="painelVenda">
                             <TextBlock Text="Classificação*"
@@ -190,7 +191,7 @@
                             </ComboBox>
                         </StackPanel>
                         
-                        <!--estado de conservação USO INTERNO-->
+                        <!--estado de conservação para categoria de USO INTERNO-->
                         <StackPanel Grid.Row="2"
                                     x:Name="painelConserva"
                                     Visibility="Collapsed">
@@ -207,8 +208,8 @@
             </Border>
 
             <!--segunda seção-->
-            <Border Grid.Row="2"
-                    x:Name="PainelRequisitos"
+            <Border x:Name="PainelRequisitos"
+                    Grid.Row="2"
                     Background="#E1E1E1"
                     CornerRadius="10"
                     Margin="20,0,20,10">
@@ -273,13 +274,14 @@
                                    Margin="10,5,0,0"/>
 
                         <TextBox x:Name="txtValor"
+                                 GotFocus="txtValor_GotFocus"
                                  Text="{Binding ValorVenda, StringFormat=\{0:C\}}"
                                  Style="{StaticResource txtBoxStyle}"/>
                     </StackPanel>
                 </Grid>
             </Border>
             
-            <!--terceira seção-->
+            <!--terceira seção / botões-->
             <Border Grid.Row="3"
                     Margin="20,0,20,10">
                 <Grid>

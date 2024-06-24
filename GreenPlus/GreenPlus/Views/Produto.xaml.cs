@@ -60,7 +60,7 @@ namespace GreenPlus.Views
             PainelRequisitos.Visibility = Visibility.Visible;
 
             painelConserva.Visibility = Visibility.Collapsed;
-            DetalhesInterno.Visibility = Visibility.Collapsed;
+            DetalhesInterno.Visibility = Visibility.Collapsed;  
         }
 
         private void RadioInterno_Checked(object sender, RoutedEventArgs e)
@@ -71,6 +71,11 @@ namespace GreenPlus.Views
 
             painelConserva.Visibility = Visibility.Visible;
             DetalhesInterno.Visibility = Visibility.Visible;
+        }
+
+        private void txtValor_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtValor.Text = string.Empty;
         }
     }
 }

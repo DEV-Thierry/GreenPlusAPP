@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:local="clr-namespace:GreenPlus.Windows"
+        xmlns:vm="clr-namespace:GreenPlus.ViewModels"
         mc:Ignorable="d"
         Title="Login" Height="700" Width="800"
         WindowStartupLocation="CenterScreen"
@@ -12,6 +13,11 @@
         WindowStyle="None"
         Background="Transparent"
         ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:UsuarioVM/>
+    </Window.DataContext>
+    
     <Border CornerRadius="20">
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
@@ -61,6 +67,7 @@
                     </Grid.RowDefinitions>
 
                     <TextBlock Text="Login"
+                               Foreground="#404040"
                                FontSize="34"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"/>
@@ -68,8 +75,10 @@
                     <StackPanel Grid.Row="1">
                         <TextBlock Text="Usuário"
                                    FontSize="18"
+                                   Foreground="#A5A5A5"
                                    Margin="50,10,0,0"/>
-                        <TextBox x:Name="Usuario"
+                        <TextBox x:Name="txtUsuario"
+                                 Text="{Binding Login}"
                                  Style="{StaticResource LoginTxt}"
                                  Margin="40,0"
                                  Padding="10,5,0,0"
@@ -83,31 +92,33 @@
 
                     <StackPanel Grid.Row="2">
                         <TextBlock Text="Senha"
+                                   Foreground="#A5A5A5"
                                    FontSize="18"
                                    Margin="50,20,0,0"/>
 
                         <PasswordBox x:Name="Senha"
+                                     PasswordChar="*"
                                      Style="{StaticResource PasswordTxt}"
                                      Height="30"
                                      Margin="40,0"
                                      Background="#E9E9E9"
-                                     Padding="10,5,0,0"/>
+                                     Padding="10,5,0,0" />
                     </StackPanel>
 
 
-                    <StackPanel Grid.Row="3">
-                        <Button x:Name="Entrar"
+
+                    <Button x:Name="Entrar"
+                            Grid.Row="3"
                                 Click="Entrar_Click"
                                 Style="{StaticResource LoginBtn}"
                                 >
-                            <TextBlock Text="Entrar"
+                        <TextBlock Text="Entrar"
                                        FontSize="18"
                                        Foreground="#FFF"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Center"/>
-                        </Button>
-                    </StackPanel>
-                    
+                    </Button>
+
                 </Grid>
             </Border>
         </Grid>

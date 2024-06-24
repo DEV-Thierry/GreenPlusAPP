@@ -75,7 +75,8 @@
                     </Menu:Btn>
 
                     <!--Cadastro de Usuários-->
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <Menu:Btn x:Name="Cadastro"
+                              Style="{StaticResource BtnStyle}"
                               Command="{Binding ProdutoCommand}"
                               Grid.Row="3">
                         <Grid>

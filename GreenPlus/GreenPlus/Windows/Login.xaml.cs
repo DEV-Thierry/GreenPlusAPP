@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GreenPlus.ViewModels;
 
 namespace GreenPlus.Windows
 {
@@ -21,6 +22,11 @@ namespace GreenPlus.Windows
     /// </summary>
     public partial class Login : Window
     {
+
+        public string Username
+        {
+            get { return txtUsuario.Text; }
+        }
         public Login()
         {
             InitializeComponent();
@@ -28,12 +34,23 @@ namespace GreenPlus.Windows
 
         private void Entrar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Clicado");
+           if(txtUsuario.Text == "Admin" && Senha.Password == "Admin")
+            {
+                this.Hide();
+                var window = new MainWindow();
+                window.Show();
+
+            }else
+            {
+                MessageBox.Show("Não está funcionando");
+            }
         }
 
         private void StackPanel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }
